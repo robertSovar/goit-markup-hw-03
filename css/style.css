@@ -14,50 +14,51 @@ body :visited {
   font-weight: 400;
 }
 
-body .page-layout{
+body .page-layout {
   width: 1600px;
   height: 2348px;
+  width: 100%;
 }
 
-.container .top-line header {
-  width: 100%; 
-  display:flex;
-  justify-content: space-between;
+.global-header {
+  display: flex;
   align-items: center;
-  height: 80px;
-  border: 1px;
-  border-color: #ECECEC;
+  margin-top: 16px;
 }
 
-.logo-container .webstudio-icon{
- margin-left: 145px;
- margin-top: 31px;
- margin-bottom: 31px;
+.global-header .logo-container {
+  margin-top: 31px;
+  margin-left: 145px;
+  padding: 24px 145px 31px 215px;
 }
 
-.nav-menu-container .navigation-menu {
+.global-header .nav-menu-container .navigation-menu {
   display: flex;
   justify-content: space-between;
 }
 .nav-menu-container .navigation-menu .studio-link {
-  margin-top: 16px;
-  margin-bottom: 16px;
   margin-left: 42px;
 }
 
 .nav-menu-container .navigation-menu .portfolio-link {
-  margin-top: 16px;
-  margin-bottom: 16px;
   margin-left: 58px;
 }
 
 .nav-menu-container .navigation-menu .contacts-link {
-  margin-top: 16px;
-  margin-bottom: 16px;
   margin-left: 59px;
 }
 
+.global-header .top-contact-details {
+  display: flex;
+}
 
+.global-header .top-contact-details .phone-number {
+  margin-left: 135px;
+}
+
+.global-header .top-contact-details .mail-address {
+  margin-left: 113px;
+}
 
 ul {
   list-style-type: none;
@@ -102,7 +103,7 @@ ul a:active {
   color: var(--button-links-color);
 }
 
-.top-contact-details a, 
+.top-contact-details a,
 .contact-details a {
   color: var(--normal-text-color);
   font-size: 14px;
@@ -110,7 +111,6 @@ ul a:active {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
-
 
 .button :hover,
 .button :active,
@@ -138,7 +138,20 @@ h1 {
 }
 
 .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #2f303a;
+}
+
+.hero-section h1 {
+  margin-top: 120px;
+  max-width: 696px;
+}
+
+.hero-section .request-button {
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 
 .request-button,
