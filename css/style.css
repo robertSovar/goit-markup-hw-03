@@ -322,6 +322,7 @@ h2 {
 .portfolio-layout-page {
   display: flex;
   width: 1600px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
